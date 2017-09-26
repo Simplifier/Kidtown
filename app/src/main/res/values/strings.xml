@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Знай Мастерславль</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Для распознавания QR-кода требуется доступ к камере</string>
+    <string name="access_net_rationale">Для работы приложения необходим доступ к проверке интернет-соединения</string>
+    <string name="check_internet_connection">Проверьте интернет-соединение</string>
+</resources>
