@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import android.widget.MediaController
 import kotlinx.android.synthetic.main.activity_video.*
-import org.jetbrains.anko.toast
 
 
 /**

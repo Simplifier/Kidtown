@@ -1,13 +1,9 @@
 package com.example.alex.start
 
 import android.Manifest
-import android.content.pm.PackageManager
 import android.os.Bundle
-import android.support.v4.app.ActivityCompat
 import android.support.v7.app.AppCompatActivity
-import android.view.View
 import com.example.alex.start.extensions.checkPermission
-import com.example.alex.start.extensions.perpetualSnackbar
 import com.google.zxing.Result
 import kotlinx.android.synthetic.main.activity_main.*
 import me.dm7.barcodescanner.zxing.ZXingScannerView
