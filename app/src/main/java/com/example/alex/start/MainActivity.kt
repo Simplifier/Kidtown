@@ -42,29 +42,4 @@ class MainActivity : AppCompatActivity(), ZXingScannerView.ResultHandler {
     override fun handleResult(rawResult: Result) {
         startActivity<ContentPageActivity>(VideoActivity.BAR_CODE to rawResult.text)
     }
-
-    /**
-     * Handles the requesting of the camera permission.  This includes
-     * showing a "Snackbar" message of why the permission is needed then
-     * sending the request.
-     */
-    private fun checkCameraPermission() {
-        val rc = ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
-        if (rc == PackageManager.PERMISSION_GRANTED) {
-            return
-        }
-
-        if (!ActivityCompat.shouldShowRequestPermissionRationale(this,
-                Manifest.permission.CAMERA)) {
-            requestCameraPermission()
-            return
-        }
-
-        main_root.perpetualSnackbar(R.string.permission_camera_rationale, R.string.ok, this::requestCameraPermission)
-    }
-
-    private fun requestCameraPermission(v: View? = null) {
-        val permissions = arrayOf(Manifest.permission.CAMERA)
-        ActivityCompat.requestPermissions(this, permissions, RC_HANDLE_CAMERA_PERM)
-    }
 }
